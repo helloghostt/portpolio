@@ -6,17 +6,17 @@
     <title>Park ChoRong's Profile</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             line-height: 1.6;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f0f0f0;
         }
         .container {
             max-width: 960px;
             margin: 0 auto;
             padding: 20px;
-            background-color: #fff;
+            background-color: #ffffff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         img {
@@ -42,26 +42,47 @@
         li {
             margin-bottom: 10px;
         }
-        .skills {
+       .contact {
+            text-align: center;
+        }
+        .stacks {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .skills-box {
             display: flex;
             justify-content: center;
             flex-wrap: wrap;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            max-width: 400px;
         }
-        .skills img {
+        .skills-box img {
             margin: 5px;
+            width: 50px;
+            height: 50px;
+            animation: bounce 2s infinite;
         }
-        .contact {
-            text-align: center;
-        }
-        .stacks h3 {
-            text-align: left;
-            margin-left: 20px;
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-10px);
+            }
+            60% {
+                transform: translateY(-5px);
+            }
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="profile.jpg" alt="Park ChoRong's photo">
+        <img src="image/profile.jpg" alt="Profile photo">
         <h1>👋 Hi, I'm <strong>Park ChoRong(박초롱)</strong></h1>
         <p>😄 Pronouns: She/Her</p>
         
@@ -80,30 +101,32 @@
         </ul>
         
         <h2>🔭 Certificate</h2>
-        <ul>
-            <li>Secondary school Teacher in Mathematics (Master´s degree) | 수학교육석사학위, 중등교원자격증(수학)</li>
-            <li>Artificial Intelligence Engineering (Bachelor's Degree) | 인공지능 공학학사학위</li>
-            <li>Computerized Accounting (KcLep system) | 전산회계KcLep 자격증</li>
-        </ul>
+        <p>
+            Secondary school Teacher in Mathematics (Master´s degree) | 수학교육석사학위, 중등교원자격증(수학)<br>
+            Artificial Intelligence Engineering (Bachelor's Degree) | 인공지능 공학학사학위<br>
+            Computerized Accounting (KcLep system) | 전산회계KcLep 자격증
+        </p>
         
         <h2>⚡ STACKS</h2>
-        <h3>Frontend</h3>
-        <div class="skills">
-            <img src="https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML">
-            <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS">
-            <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript">
-        </div>
-        <h3>Backend</h3>
-        <div class="skills">
-            <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
-            <img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL">
-            <img src="https://img.shields.io/badge/django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django">
-        </div>
-        <h3>DevOps</h3>
-        <div class="skills">
-            <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub">
-            <img src="https://techstack-generator.vercel.app/docker-icon.svg" alt="Docker" width="43" height="43">
-            <img src="https://techstack-generator.vercel.app/aws-icon.svg" alt="AWS" width="43" height="43">
+        <div class="stacks">
+            <div class="skills-box">
+                <h3>Frontend</h3>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+            </div>
+            <div class="skills-box">
+                <h3>Backend</h3>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django">
+            </div>
+            <div class="skills-box">
+                <h3>DevOps</h3>
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg" alt="AWS">
+            </div>
         </div>
         
         <h2>📫 How to reach me</h2>
