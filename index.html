@@ -107,6 +107,10 @@
         }
         
         .skills-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             background-color: #444444;
             padding: 20px;
             border-radius: 10px;
@@ -125,7 +129,7 @@
             margin: 5px;
             width: 43px;
             height: 43px;
-            filter: invert(0.8) sepia(0.3) hue-rotate(180deg) saturate(200%);
+            filter: brightness(1.2) contrast(1.1);
         }
     </style>
 </head>
@@ -174,6 +178,7 @@
         <h2>⚡ STACKS</h2>
         <div class="stacks">
             <div class="skills-box">
+                <h3>Frontend</h3>
                 <img src="https://techstack-generator.vercel.app/html-icon.svg" alt="HTML" width="43" height="43">
                 <img src="https://techstack-generator.vercel.app/css-icon.svg" alt="CSS" width="43" height="43">
                 <img src="https://techstack-generator.vercel.app/js-icon.svg" alt="JavaScript" width="43" height="43">
