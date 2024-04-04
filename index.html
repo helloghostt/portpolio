@@ -6,57 +6,78 @@
     <title>Park ChoRong's Profile</title>
     <style>
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #333333;
-            color: #ffffff;
+            font-family: 'Montserrat', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
         }
+        
         .container {
-            max-width: 960px;
+            max-width: 800px;
             margin: 0 auto;
-            padding: 20px;
-            background-color: #444444;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            background-color: #ffffff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
+        
         .profile {
             display: flex;
-            justify-content: space-between;
-            align-items: flex-start;
-            margin-bottom: 20px;
+            align-items: center;
+            margin-bottom: 40px;
         }
+        
         .profile img {
-            max-width: 300px;
+            max-width: 200px;
             border-radius: 50%;
-            order: 2;
-            margin-right: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
         }
-        .profile h1 {
+        
+        .profile-text {
+            margin-left: 30px;
+        }
+        
+        .profile-text h1 {
             font-size: 32px;
-            text-align: center;
+            color: #2c3e50;
             margin-bottom: 10px;
         }
-        .profile p {
-            font-size: 16px;
-            margin: 5px 0;
+        
+        .profile-text ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
         }
+        
+        .profile-text li {
+            font-size: 18px;
+            color: #7f8c8d;
+            margin-bottom: 5px;
+        }
+        
         h2 {
+            font-size: 24px;
+            color: #2c3e50;
             text-align: center;
+            margin-bottom: 20px;
         }
+        
         ul, .certificate {
             list-style-type: none;
             padding: 0;
-            max-width: 800px;
             margin: 0 auto;
-            background-color: #555555;
+            max-width: 600px;
+            background-color: #f8f8f8;
             padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
+        
         li, .certificate p {
+            font-size: 16px;
+            color: #7f8c8d;
             margin-bottom: 10px;
         }
+        
         .certificate {
             display: flex;
             flex-direction: column;
@@ -64,48 +85,45 @@
         }
         
         .certificate-item {
-            background-color: #555555;
+            background-color: #ffffff;
             padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
             width: 100%;
         }
+        
         .contact {
             text-align: center;
+            margin-top: 40px;
         }
+        
         .stacks {
             display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .skills-box {
-            display: flex;
-            justify-content: center;
             flex-wrap: wrap;
-            background-color: #555555;
-            padding: 20px;
-            border-radius: 5px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
-            max-width: 400px;
+            justify-content: center;
+            margin-top: 40px;
         }
+        
+        .skills-box {
+            background-color: #f8f8f8;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            text-align: center;
+        }
+        
+        .skills-box h3 {
+            font-size: 18px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
         .skills-box img {
             margin: 5px;
-            width: 50px;
-            height: 50px;
-            animation: bounce 2s infinite;
-        }
-        @keyframes bounce {
-            0%, 20%, 50%, 80%, 100% {
-                transform: translateY(0);
-            }
-            40% {
-                transform: translateY(-10px);
-            }
-            60% {
-                transform: translateY(-5px);
-            }
+            width: 40px;
+            height: 40px;
         }
     </style>
 </head>
