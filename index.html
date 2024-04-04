@@ -23,13 +23,13 @@
         .profile {
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
             margin-bottom: 20px;
         }
         .profile img {
             max-width: 200px;
             border-radius: 50%;
-            margin-right: 20px;
+            order: 2;
         }
         .profile h1 {
             font-size: 32px;
@@ -111,14 +111,17 @@
 <body>
     <div class="container">
         <div class="profile">
-            <img src="image/profile.jpg" alt="photo">
             <div class="profile-text">
                 <h1>👋 Hi, I'm Park ChoRong(박초롱)</h1>
-                <p>Artificial Intelligence | AI인공지능</p>
-                <p>Backend Development | 백엔드개발</p>
-                <p>Mathematics Education | 수학교육</p>
+                <ul>
+                    <li>🌱 수학을 좋아하는 **개발자**</li>
+                    <li>🌱 끊임없이 도전하는 인생</li>
+                    <li>🌱 지금도 공부 중입니다</li>
+                </ul>
             </div>
+            <img src="image/profile.jpg" alt="photo">
         </div>
+        
         
         <h2>👀 I'm interested in</h2>
         <ul>
