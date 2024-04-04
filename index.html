@@ -12,6 +12,27 @@
             padding: 0;
             background-color: #f0f0f0;
         }
+        .profile {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        .profile img {
+            max-width: 200px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .profile h1 {
+            font-size: 24px;
+            color: #333;
+            margin: 0;
+        }
+        .profile p {
+            font-size: 16px;
+            color: #666;
+            margin: 5px 0;
+        }
         .container {
             max-width: 960px;
             margin: 0 auto;
@@ -19,17 +40,11 @@
             background-color: #ffffff;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-        img {
-            max-width: 200px;
-            border-radius: 50%;
-            display: block;
-            margin: 0 auto;
-        }
-        h1, h2 {
+        h2 {
             text-align: center;
             color: #333;
         }
-        ul {
+        ul, .certificate {
             list-style-type: none;
             padding: 0;
             max-width: 400px;
@@ -39,7 +54,7 @@
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
-        li {
+        li, .certificate p {
             margin-bottom: 10px;
         }
        .contact {
@@ -81,14 +96,16 @@
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="image/profile.jpg" alt="Profile photo">
-        <h1>👋 Hi, I'm <strong>Park ChoRong(박초롱)</strong></h1>
-        <ul>
-            <li>Artificial Intelligence | AI</li>
-            <li>Backend Development | 백엔드개발</li>
-            <li>Mathematics Education | 수학교육</li>
-        </ul>
+    <img src="image/profile.jpg" alt="Profile photo">
+        <div class="profile">
+            <img src="images/profile.jpg" alt="Park ChoRong's photo">
+            <div>
+                <h1>👋 Hi, I'm Park ChoRong(박초롱)</h1>
+                <p>Artificial Intelligence | AI</p>
+                <p>Backend Development | 백엔드개발</p>
+                <p>Mathematics Education | 수학교육</p>
+            </div>
+        </div>
         
         <h2>👀 I'm interested in</h2>
         <ul>
@@ -105,12 +122,11 @@
         </ul>
         
         <h2>🔭 Certificate</h2>
-        <p>
-            Secondary school Teacher in Mathematics (Master´s degree) | 수학교육석사학위, 중등교원자격증(수학)<br>
-            Artificial Intelligence Engineering (Bachelor's Degree) | 인공지능 공학학사학위<br>
-            Computerized Accounting (KcLep system) | 전산회계KcLep 자격증
-        </p>
-        
+        <div class="certificate">
+            <p>Secondary school Teacher in Mathematics (Master´s degree) | 수학교육석사학위, 중등교원자격증(수학)</p>
+            <p>Artificial Intelligence Engineering (Bachelor's Degree) | 인공지능 공학학사학위</p>
+            <p>Computerized Accounting (KcLep system) | 전산회계KcLep 자격증</p>
+        </div>
         <h2>⚡ STACKS</h2>
         <div class="stacks">
             <div class="skills-box">
