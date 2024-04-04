@@ -131,6 +131,24 @@
             height: 43px;
             filter: brightness(1.2) contrast(1.1) invert(0.8) sepia(0.3) hue-rotate(180deg) saturate(200%);
         }
+        .skills-row {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+        
+        .skill {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 10px;
+        }
+        
+        .skill span {
+            font-size: 14px;
+            color: #bdc3c7;
+            margin-top: 5px;
+        }
     </style>
 </head>
 <body>
@@ -179,9 +197,22 @@
         <div class="stacks">
             <div class="skills-box">
                 <h3>Frontend</h3><br>
-                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" width="43" height="43">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" width="43" height="43">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="43" height="43">
+                <div class="skills-row">
+                    <div class="skill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" width="43" height="43">
+                        <span>HTML</span>
+                    </div>
+                    <div class="skill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" width="43" height="43">
+                        <span>CSS</span>
+                    </div>
+                </div>
+                <div class="skills-row">
+                    <div class="skill">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" width="43" height="43">
+                        <span>JavaScript</span>
+                    </div>
+                </div>
             </div>
             <div class="skills-box">
                 <h3>Backend</h3><br>
