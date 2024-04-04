@@ -57,6 +57,20 @@
         li, .certificate p {
             margin-bottom: 10px;
         }
+        .certificate {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .certificate-item {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            width: 100%;
+        }
         .contact {
             text-align: center;
         }
@@ -123,10 +137,17 @@
         
         <h2>🔭 Certificate</h2>
         <div class="certificate">
-            <p>Secondary school Teacher in Mathematics (Master´s degree) | 수학교육석사학위, 중등교원자격증(수학)</p>
-            <p>Artificial Intelligence Engineering (Bachelor's Degree) | 인공지능 공학학사학위</p>
-            <p>Computerized Accounting (KcLep system) | 전산회계KcLep 자격증</p>
+            <div class="certificate-item">
+                <p>Secondary school Teacher in Mathematics (Master´s degree) | 수학교육석사학위, 중등교원자격증(수학)</p>
+            </div>
+            <div class="certificate-item">
+                <p>Artificial Intelligence Engineering (Bachelor's Degree) | 인공지능 공학학사학위</p>
+            </div>
+            <div class="certificate-item">
+                <p>Computerized Accounting (KcLep system) | 전산회계KcLep 자격증</p>
+            </div>
         </div>
+        
         <h2>⚡ STACKS</h2>
         <div class="stacks">
             <div class="skills-box">
